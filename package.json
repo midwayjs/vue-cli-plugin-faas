@@ -12,11 +12,11 @@
 	"homepage": "https://github.com/midwayjs/vue-cli-plugin-faas/blob/master/README.md",
 	"bugs": {
 		"url": "https://github.com/midwayjs/vue-cli-plugin-faas/issues",
-		"email": "me@deraw.dev"
+		"email": "czy88840616@gmail.com"
 	},
 	"license": "MIT",
 	"author": {
-		"name": "Harry Chem",
+		"name": "Harry Chen",
 		"email": "czy88840616@gmail.com"
 	},
 	"main": "index.js",

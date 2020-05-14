@@ -29,11 +29,11 @@ yarn add vue-cli-plugin-faas
 ```js
 // vue.config.js
 module.exports = {
-    pluginOptions: {
-        faas: {
-          // ...
-        }
+  pluginOptions: {
+    faas: {
+      // ...
     }
+  }
 }
 ```
 
@@ -49,16 +49,16 @@ See [midway faas dev pack](https://github.com/midwayjs/midway-faas/tree/master/p
 // vue.config.js
 module.exports = {
   pluginOptions: {
-      faas: {
-        sourceDir: 'src/apis',
-        // ignore function name
-        ignoreWildcardFunctions: ['render'],
-        // ignore pattern
-        ignorePattern: (req) => {
-          const { pathname } = URL.parse(req.url);
-          return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(pathname);
-        }
+    faas: {
+      sourceDir: 'src/apis',
+      // ignore function name
+      ignoreWildcardFunctions: ['render'],
+      // ignore pattern
+      ignorePattern: (req) => {
+        const { pathname } = URL.parse(req.url);
+        return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(pathname);
       }
+    }
   }
 }
 ```
