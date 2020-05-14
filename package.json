@@ -1,0 +1,30 @@
+{
+	"name": "vue-cli-plugin-faas",
+	"version": "0.0.1",
+	"description": "Provide midway faas dev pack options to vue-cli",
+	"keywords": [
+		"vue",
+		"vuejs2",
+		"vue-cli",
+    "midway",
+    "faas"
+	],
+	"homepage": "https://github.com/midwayjs/vue-cli-plugin-faas/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/midwayjs/vue-cli-plugin-faas/issues",
+		"email": "me@deraw.dev"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Harry Chem",
+		"email": "czy88840616@gmail.com"
+	},
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/midwayjs/vue-cli-plugin-faas"
+	},
+	"dependencies": {
+		"@midwayjs/faas-dev-pack": "^0.2.94"
+	}
+}
