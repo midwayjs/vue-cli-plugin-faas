@@ -43,40 +43,21 @@ See [midway faas dev pack](https://github.com/midwayjs/midway-faas/tree/master/p
 
 ### Object examples
 
-* First example of the docs:
+* default value, you can overwrite it.
 
 ```js
 // vue.config.js
 module.exports = {
   pluginOptions: {
-      proxy: {
-          enabled: true,
-          context: '/api',
-          options: {
-              target: 'http://www.example.org',
-              changeOrigin: true
-          }
-      }
-  }
-}
-```
-
-* v1.0.0 default:
-
-```js
-// vue.config.js
-module.exports = {
-  pluginOptions: {
-      proxy: {
-          enabled: true,
-          sourceDir: 'src/apis',
-          // ignore function name
-          ignoreWildcardFunctions: ['render'],
-          // ignore pattern
-          ignorePattern: (req) => {
-            const { pathname } = URL.parse(req.url);
-            return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(pathname);
-          }
+      faas: {
+        sourceDir: 'src/apis',
+        // ignore function name
+        ignoreWildcardFunctions: ['render'],
+        // ignore pattern
+        ignorePattern: (req) => {
+          const { pathname } = URL.parse(req.url);
+          return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(pathname);
+        }
       }
   }
 }
