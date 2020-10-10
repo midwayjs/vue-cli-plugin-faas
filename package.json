@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-faas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide midway faas dev pack options to vue-cli",
   "keywords": [
     "vue",
